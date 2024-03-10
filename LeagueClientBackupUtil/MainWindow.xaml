@@ -1,0 +1,21 @@
+﻿<Window x:Class="LeagueClientBackupUtil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeagueClientBackupUtil"
+        mc:Ignorable="d"
+        Title="LoL Client Backup Tool" Height="200" Width="400" ResizeMode="NoResize">
+    <Grid Margin="0,10,0,7" Width="380" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Backup_Button" Content="Backup" HorizontalAlignment="Left" Margin="50,24,0,0" VerticalAlignment="Top" Width="100" Height="32" Click="Backup_Button_Click" Grid.Row="1"/>
+        <Button x:Name="Restore_Button" Content="Restore" Margin="0,24,50,0" VerticalAlignment="Top" Height="32" Grid.Row="1" Width="100" HorizontalAlignment="Right" Click="Restore_Button_Click"/>
+        <Label Content="Is Riot trying to ruin your day?" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="or, are you here to play it safe?" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Version_Label" Content="v0.0.0" HorizontalAlignment="Right" Margin="0,58,10,0" VerticalAlignment="Top" Grid.Row="1"/>
+
+    </Grid>
+</Window>
